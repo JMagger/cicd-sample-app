@@ -1,7 +1,7 @@
 properties([pipelineTriggers([githubPush()])])
 
 node {
-        git url: 'https://github.com/HoGentTIN/infra-24-25-JMagger',branch: 'main'
+        git url: 'https://github.com/JMagger/cicd-sample-app',branch: 'main'
         stage ('Compile Stage') {
 
             echo "compiling"
